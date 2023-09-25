@@ -1,0 +1,125 @@
+/* Definición de variables CSS para valores que se repiten */
+:root {
+  --main-padding: 2em;  /* Padding principal */
+  --button-bg-color: #7ec5b9 ;  /* Color de fondo de los botones */
+  --button-text-color: #fff;  /* Color del texto de los botones */
+  --button-padding: 10px 20px;  /* Padding de los botones */
+  --button-radius: 4px;  /* Radio de borde de los botones */
+  --color: #5a5a5a; /* Color del placeholder */
+}
+
+/* Estilo del contenedor principal */
+#root {
+  max-width: 1280px;  /* Ancho máximo */
+  margin: 0 auto;  /* Centrar */
+  padding: var(--main-padding);  /* Padding */
+  text-align: center;  /* Alineación del texto al centro */
+}
+
+/* Estilo del logo */
+.logo {
+  height: 6em;  /* Altura */
+  padding: 1.5em;  /* Padding */
+  transition: filter 300ms;  /* Transición suave del filtro */
+}
+
+
+/* Estilo de las tarjetas y el contenedor de botones */
+.card, .button-container {
+  padding: var(--main-padding);  /* Padding */
+}
+
+/* Estilo de los campos de entrada */
+.input-group input {
+  width: 100%;  /* Ancho completo */
+  padding: 10px 5px;  /* Padding */
+  border: 1px solid #ccc;  /* Borde */
+  border-radius: var(--button-radius);  /* Radio de borde */
+}
+
+/* Estilo de las etiquetas de las fechas y otros campos */
+.date-label, .input-label {
+  margin-bottom: 5px;  /* Margen inferior */
+}
+
+/* Espaciado superior del contenedor de botones */
+.button-container {
+  margin-top: 1rem;  /* Margen superior */
+}
+
+/* Estilo de los botones dentro del contenedor de botones */
+.button-container button {
+  margin: 0.1em; /* Ajusta este valor según tu preferencia */
+}
+
+/* Estilo para el botón del medio */
+.button-consulta {
+  padding: 30px 30px; /* Aumenta el padding */
+  font-size: 1.2em;  /* Aumenta el tamaño de la fuente */
+  /* También puedes usar las propiedades width y height si lo prefieres */
+  width: 150px; 
+  height: 60px; 
+}
+
+
+body {
+  background: radial-gradient(circle, #40666d, #131b33);
+}
+
+
+/* Estilo de los botones del contenedor de botones y el botón volver */
+.button-container button, .volver-help-button {
+  background-color: var(--button-bg-color);  /* Color de fondo */
+  color: var(--button-text-color);  /* Color del texto */
+  border: none;  /* Sin bordes */
+  padding: var(--button-padding);  /* Padding */
+  cursor: pointer;  /* Cursor puntero */
+  border-radius: var(--button-radius);  /* Radio de borde */
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.button-container button:hover, .volver-help-button:hover {
+  background-color: #66a9a1;  /* Color de fondo más oscuro */
+}
+
+/* Estilo del logo de la app */
+.app-logo {
+  width: 200px;  /* Ancho */
+  margin-bottom: 20px;  /* Margen inferior */
+}
+
+/* En tu archivo CSS (e.g., App.css) */
+.text-field {
+  background-color: #66a9a1 ;
+}
+
+/* En tu archivo CSS (e.g., App.css) */
+.text-field::placeholder {
+  color: var(--color);
+  opacity: 1; /* Firefox */
+}
+
+.text-field::-webkit-input-placeholder {
+  color: var(--color); 
+}
+
+.text-field::-moz-placeholder {
+  color: var(--color);
+  opacity: 1; /* Firefox */
+}
+
+.text-field:-ms-input-placeholder {
+  color: var(--color); /* Rojo en formato hexadecimal */
+}
+
+.text-field::-webkit-datetime-edit-fields-wrapper {
+  color: white; 
+}
+
+.text-field.has-value {
+  color: white;
+}
+
+.text-field:not(:placeholder-shown) {
+  color: white;
+}
