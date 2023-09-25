@@ -52,15 +52,45 @@
   margin: 0.1em; /* Ajusta este valor según tu preferencia */
 }
 
-/* Estilo para el botón del medio */
-.button-consulta {
-  padding: 30px 30px; /* Aumenta el padding */
-  font-size: 1.2em;  /* Aumenta el tamaño de la fuente */
-  /* También puedes usar las propiedades width y height si lo prefieres */
-  width: 150px; 
-  height: 60px; 
+/* Estilos existentes */
+
+/* Estilo para el contenedor de botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Estilo para el grupo de botones Borrar y Ayuda */
+.button-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px; /* Espacio entre los botones Borrar y Ayuda */
+}
+
+/* Estilos para los botones individualmente */
+.button-borrar, .button-ayuda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  width: 30px;
+  height: 30px;
+}
+
+.button-consulta {
+  padding: 30px 30px;
+  font-size: 1.2em;
+  width: 150px;
+  height: 60px;
+}
+
+.button-borrar img, .button-ayuda img {
+  height: 20px;
+  width: auto;
+}
 
 body {
   background: radial-gradient(circle, #40666d, #131b33);
