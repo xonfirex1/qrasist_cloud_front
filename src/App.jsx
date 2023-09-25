@@ -70,7 +70,7 @@ function App() {
 
     try {
       // Realiza la petición al servidor
-      const response = await fetch('http://localhost:3001/qrasist_cloud_back', {
+      const response = await fetch('http://ec2-18-218-139-55.us-east-2.compute.amazonaws.com:3001/qrasist_cloud_back', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
