@@ -167,15 +167,16 @@ function App() {
                         </div>
                     </div>
                     <div className="button-container">
-                        <button type="button" onClick={handleReset} title="Borrar búsqueda">
-                          <img src={borrar} alt="Icono Limpiar" style={{ height: '20px', verticalAlign: 'middle' }} />
-                        </button>
                         <button className="button-consulta" title="Consultar mes" type="submit">Consultar</button>
-                        <button type="button" onClick={handleHelpClick} title="Ayuda">
-                          <img src={ayuda} alt="Icono Ayuda" style={{ height: '20px', verticalAlign: 'middle' }} />
-                        </button>
-                        
-                    </div>
+                        <div className="button-group">
+                            <button className="button-borrar" type="button" onClick={handleReset} title="Borrar búsqueda">
+                                <img src={borrar} alt="Icono Limpiar" />
+                            </button>
+                            <button className="button-ayuda" type="button" onClick={handleHelpClick} title="Ayuda">
+                                <img src={ayuda} alt="Icono Ayuda" />
+                            </button>
+                        </div>
+                    </div>  
 
                 </form>
 
