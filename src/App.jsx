@@ -122,7 +122,7 @@ function App() {
                             value={rut}
                             onChange={(e) => setRut(e.target.value)}
                             onKeyDown={handleRutChange}
-                            placeholder="ejemplo: 11111111-1"
+                            placeholder="ejemplo: 11.111.111-1"
                             maxLength="12"
                             title="Ingresa tu Rut"
                             className="text-field"
