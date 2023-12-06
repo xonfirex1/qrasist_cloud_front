@@ -44,7 +44,7 @@ function App() {
     }
 
     try {
-        const response = await fetch('http://localhost:3001/qrasist_cloud_back', {
+        const response = await fetch('http://ec2-54-94-227-112.sa-east-1.compute.amazonaws.com:3001/qrasist_cloud_back', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
