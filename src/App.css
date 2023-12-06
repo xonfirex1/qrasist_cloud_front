@@ -1,6 +1,6 @@
 /* Definición de variables CSS para valores que se repiten */
 :root {
-  --main-padding: 2em;  /* Padding principal */
+  --main-padding: 1em;  /* Padding principal */
   --button-bg-color: #7ec5b9 ;  /* Color de fondo de los botones */
   --button-text-color: #fff;  /* Color del texto de los botones */
   --button-padding: 10px 20px;  /* Padding de los botones */
@@ -18,8 +18,8 @@
 
 /* Estilo del logo */
 .logo {
-  height: 6em;  /* Altura */
-  padding: 1.5em;  /* Padding */
+  height: 5em;  /* Altura */
+  padding: 1.2em;  /* Padding */
   transition: filter 300ms;  /* Transición suave del filtro */
 }
 
@@ -114,7 +114,7 @@ body {
 
 /* Estilo del logo de la app */
 .app-logo {
-  width: 200px;  /* Ancho */
+  width: 150px;  /* Ancho */
   margin-bottom: 20px;  /* Margen inferior */
 }
 
@@ -151,5 +151,64 @@ body {
 }
 
 .text-field:not(:placeholder-shown) {
+  color: white;
+}
+
+/*------------------------------------------------------------*/
+
+/* App.css */
+
+/* Estilo para el contenedor del calendario */
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #40666d;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el botón de Cerrar */
+.calendar-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7ec5b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de Cerrar al pasar el ratón por encima */
+.calendar-container button:hover {
+  background-color: #66a9a1;
+}
+
+/* Estilo para los días con eventos (backgroundColor personalizado) */
+.fc-day-grid-event {
+  background-color: #7ec5b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+/* Estilo para los días con eventos al pasar el ratón por encima */
+.fc-day-grid-event:hover {
+  background-color: #66a9a1;
+}
+
+.text-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.text-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.text-field::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
